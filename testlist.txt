@@ -1,0 +1,14 @@
+mac_reg_read_test
+mac_reg_write_read_test
+mac_random_reg_write_read_test
+mac_random_reg_wr_nr_test
+mac_reg_write_read_reg_model_test
+mac_bd_reg_wr_rd_rm_test
+mac_reg_rd_rm_test
+mac_fd_test
+mac_fd_rx_test
+mac_fd_tx_rx_test
+mac_mii_wctrl_data_tx_test
+mac_hd_tx_coll_det_test
+mac_fd_tx_pause_frame_test
+
