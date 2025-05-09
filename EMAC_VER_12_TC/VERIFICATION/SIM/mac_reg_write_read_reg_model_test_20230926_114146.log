@@ -1,0 +1,156 @@
+# vsim -novopt -suppress 12110 top "+UVM_TESTNAME=mac_reg_write_read_reg_model_test" "+UVM_VERBOSITY=UVM_LOW" -l mac_reg_write_read_reg_model_test_20230926_114146.log 
+# Start time: 11:41:46 on Sep 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.top
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.top_tb_sv_unit
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_tb_sv_unit
+# Loading work.top
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.wb_proc_intf
+# Loading work.wb_proc_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.wb_mem_intf
+# Loading work.wb_mem_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.phy_intf
+# Loading work.phy_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.miim_intf
+# Loading work.miim_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.ethmac
+# Loading work.ethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_miim
+# Loading work.eth_miim
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_clockgen
+# Loading work.eth_clockgen
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_shiftreg
+# Loading work.eth_shiftreg
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_outputcontrol
+# Loading work.eth_outputcontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_registers
+# Loading work.eth_registers
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_register
+# Loading work.eth_register
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_maccontrol
+# Loading work.eth_maccontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_receivecontrol
+# Loading work.eth_receivecontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_transmitcontrol
+# Loading work.eth_transmitcontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txethmac
+# Loading work.eth_txethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txcounters
+# Loading work.eth_txcounters
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txstatem
+# Loading work.eth_txstatem
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_crc
+# Loading work.eth_crc
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_random
+# Loading work.eth_random
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxethmac
+# Loading work.eth_rxethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxstatem
+# Loading work.eth_rxstatem
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxcounters
+# Loading work.eth_rxcounters
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxaddrcheck
+# Loading work.eth_rxaddrcheck
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_wishbone
+# Loading work.eth_wishbone
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_spram_256x32
+# Loading work.eth_spram_256x32
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_fifo
+# Loading work.eth_fifo
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_macstatus
+# Loading work.eth_macstatus
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-3764) ../WB/wb_proc_mon.sv(13): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../MEM/memory.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../MEM/wb_mem_mon.sv(13): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_tx_mon.sv(14): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_rx_mon.sv(14): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_drv.sv(12): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_proc_drv File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(153): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_write_read_reg_model_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(234): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_bd_wr_rd_rm_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(286): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_rd_rm_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(320): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(377): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_isr_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(410): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_rx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(455): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_rx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(511): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::mii_wctrl_data_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(563): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_hd_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(610): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_pf_seq File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_tx_drv.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::phy_tx_drv File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_rx_drv.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::phy_rx_drv File: mac.svh
+# Loading C:/questasim64_10.6c/uvm-1.1d\win64\uvm_dpi.dll
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ./run1.do line 20
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+do run1.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 11:42:34 on Sep 26,2023
+# vlog -reportprogress 300 "+incdir+../../RTL" ../TOP/top_tb.sv "+incdir+../TOP" "+incdir+../PHY" "+incdir+../MII" "+incdir+../WB" "+incdir+../MEM" "+incdir+../SBD" 
+# -- Compiling module eth_clockgen
+# -- Compiling module eth_cop
+# -- Compiling module eth_crc
+# -- Compiling module eth_fifo
+# -- Compiling module eth_maccontrol
+# -- Compiling module eth_macstatus
+# -- Compiling module eth_miim
+# -- Compiling module eth_outputcontrol
+# -- Compiling module eth_random
+# -- Compiling module eth_receivecontrol
+# -- Compiling module eth_register
+# -- Compiling module eth_registers
+# -- Compiling module eth_rxaddrcheck
+# -- Compiling module eth_rxcounters
+# -- Compiling module eth_rxethmac
+# -- Compiling module eth_rxstatem
+# -- Compiling module eth_shiftreg
+# -- Compiling module eth_spram_256x32
+# -- Compiling module eth_transmitcontrol
+# -- Compiling module eth_txcounters
+# -- Compiling module eth_txethmac
+# -- Compiling module eth_txstatem
+# -- Compiling module eth_wishbone
+# -- Compiling module ethmac
+# ** Note: (vlog-2286) mac.svh(32): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ../SBD/mac_reg_model.sv(51): (vlog-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: ../SBD/mac_reg_model.sv(194): (vlog-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(335): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(345): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(374): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../WB/wb_proc_seq_lib.sv(190): (vlog-2240) Treating stand-alone use of function 'predict' as an implicit VOID cast.
+# -- Compiling interface wb_proc_intf
+# -- Compiling interface wb_mem_intf
+# -- Compiling interface phy_intf
+# -- Compiling interface miim_intf
+# -- Compiling module top
+# 
+# Top level modules:
+# 	eth_cop
+# 	top
+# End time: 11:42:35 on Sep 26,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# mac_reg_write_read_reg_model_test
+# mac_reg_write_read_reg_model_test_20230926_114235.log

@@ -1,0 +1,597 @@
+# End time: 11:42:38 on Sep 26,2023, Elapsed time: 0:00:52
+# Errors: 3, Warnings: 25
+# vsim -novopt -suppress 12110 top "+UVM_TESTNAME=mac_reg_write_read_reg_model_test" "+UVM_VERBOSITY=UVM_LOW" -l mac_reg_write_read_reg_model_test_20230926_114235.log 
+# Start time: 11:42:38 on Sep 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.top
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.top_tb_sv_unit
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_tb_sv_unit
+# Loading work.top
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.wb_proc_intf
+# Loading work.wb_proc_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.wb_mem_intf
+# Loading work.wb_mem_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.phy_intf
+# Loading work.phy_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.miim_intf
+# Loading work.miim_intf
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.ethmac
+# Loading work.ethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_miim
+# Loading work.eth_miim
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_clockgen
+# Loading work.eth_clockgen
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_shiftreg
+# Loading work.eth_shiftreg
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_outputcontrol
+# Loading work.eth_outputcontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_registers
+# Loading work.eth_registers
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_register
+# Loading work.eth_register
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_maccontrol
+# Loading work.eth_maccontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_receivecontrol
+# Loading work.eth_receivecontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_transmitcontrol
+# Loading work.eth_transmitcontrol
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txethmac
+# Loading work.eth_txethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txcounters
+# Loading work.eth_txcounters
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_txstatem
+# Loading work.eth_txstatem
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_crc
+# Loading work.eth_crc
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_random
+# Loading work.eth_random
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxethmac
+# Loading work.eth_rxethmac
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxstatem
+# Loading work.eth_rxstatem
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxcounters
+# Loading work.eth_rxcounters
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_rxaddrcheck
+# Loading work.eth_rxaddrcheck
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_wishbone
+# Loading work.eth_wishbone
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_spram_256x32
+# Loading work.eth_spram_256x32
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_fifo
+# Loading work.eth_fifo
+# Refreshing C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/work.eth_macstatus
+# Loading work.eth_macstatus
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-3764) ../WB/wb_proc_mon.sv(13): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../MEM/memory.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../MEM/wb_mem_mon.sv(13): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_tx_mon.sv(14): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_rx_mon.sv(14): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_drv.sv(12): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_proc_drv File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(153): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_write_read_reg_model_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(234): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_bd_wr_rd_rm_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(286): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_reg_rd_rm_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(320): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(377): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_isr_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(410): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_rx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(455): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_rx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(511): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::mii_wctrl_data_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(563): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_hd_tx_seq File: mac.svh
+# ** Warning: (vsim-3764) ../WB/wb_proc_seq_lib.sv(610): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::wb_fd_tx_pf_seq File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_tx_drv.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::phy_tx_drv File: mac.svh
+# ** Warning: (vsim-3764) ../PHY/phy_rx_drv.sv(11): Stand-alone call to function 'read_by_name' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb_sv_unit::phy_rx_drv File: mac.svh
+# Loading C:/questasim64_10.6c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mac_reg_write_read_reg_model_test...
+# include_coverage not located
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean recording_detail?
+# include_coverage not located
+#   did you mean recording_detail?
+# CLK_TP not located
+#   did you mean MAC_RM?
+# CLK_TP not located
+#   did you mean MAC_RM?
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -------------------------------------------------------------------------
+# Name                       Type                               Size  Value
+# -------------------------------------------------------------------------
+# uvm_test_top               mac_reg_write_read_reg_model_test  -     @483 
+#   env                      ethmac_env                         -     @490 
+#     mem_agent_i            wb_mem_agent                       -     @504 
+#       mem                  memory                             -     @681 
+#       mon                  wb_mem_mon                         -     @688 
+#         ap_port            uvm_analysis_port                  -     @697 
+#     miim_agent_i           miim_agent                         -     @525 
+#     proc_agent_i           wb_proc_agent                      -     @497 
+#       cov                  wb_proc_cov                        -     @846 
+#         analysis_imp       uvm_analysis_imp                   -     @853 
+#       drv                  wb_proc_drv                        -     @707 
+#         rsp_port           uvm_analysis_port                  -     @722 
+#         seq_item_port      uvm_seq_item_pull_port             -     @714 
+#       mon                  wb_proc_mon                        -     @839 
+#         ap_port            uvm_analysis_port                  -     @863 
+#       sqr                  uvm_sequencer                      -     @730 
+#         rsp_export         uvm_analysis_export                -     @737 
+#         seq_item_export    uvm_seq_item_pull_imp              -     @831 
+#         arbitration_queue  array                              0     -    
+#         lock_queue         array                              0     -    
+#         num_last_reqs      integral                           32    'd1  
+#         num_last_rsps      integral                           32    'd1  
+#     rx_agent_i             phy_rx_agent                       -     @518 
+#       drv                  phy_rx_drv                         -     @877 
+#         rsp_port           uvm_analysis_port                  -     @892 
+#         seq_item_port      uvm_seq_item_pull_port             -     @884 
+#       mon                  phy_rx_mon                         -     @1009
+#         ap_port            uvm_analysis_port                  -     @1019
+#       sqr                  uvm_sequencer                      -     @900 
+#         rsp_export         uvm_analysis_export                -     @907 
+#         seq_item_export    uvm_seq_item_pull_imp              -     @1001
+#         arbitration_queue  array                              0     -    
+#         lock_queue         array                              0     -    
+#         num_last_reqs      integral                           32    'd1  
+#         num_last_rsps      integral                           32    'd1  
+#     sbd                    mac_sbd                            -     @536 
+#       imp_mem              uvm_analysis_imp_mem               -     @1040
+#       imp_proc             uvm_analysis_imp_proc              -     @1032
+#       imp_rx               uvm_analysis_imp_rx                -     @1056
+#       imp_tx               uvm_analysis_imp_tx                -     @1048
+#     tx_agent_i             phy_tx_agent                       -     @511 
+#       drv                  phy_tx_drv                         -     @1065
+#         rsp_port           uvm_analysis_port                  -     @1080
+#         seq_item_port      uvm_seq_item_pull_port             -     @1072
+#       mon                  phy_tx_mon                         -     @1088
+#         ap_port            uvm_analysis_port                  -     @1098
+# -------------------------------------------------------------------------
+# 
+# SBD COMPARE Check started - 1
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 35: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 65: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 95: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 125: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 155: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 185: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 215: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 245: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 275: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 305: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 335: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 365: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 395: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 425: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 455: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 485: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 515: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 545: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 575: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 605: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 635: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 665: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miistatus: Expected : 6  actual : 6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 665: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 695: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr1: Expected : 20  actual : 20
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 695: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 725: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miitx_data: Expected : 360c  actual : 360c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 725: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 755: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed moder: Expected : a238  actual : a238
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 755: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 785: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr0: Expected : 3c5dba62  actual : 3c5dba62
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 785: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 815: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash0: Expected : cf2b3539  actual : cf2b3539
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 815: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 845: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr1: Expected : 65be  actual : 65be
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 845: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 875: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash1: Expected : a4355c18  actual : a4355c18
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 875: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 905: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intsrc: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 905: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 935: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txctrl: Expected : 19daa  actual : 19daa
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 935: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 965: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed packetlen: Expected : 89dae100  actual : 89dae100
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 965: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 995: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ctrlmoder: Expected : 2  actual : 2
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 995: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1025: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txbdnum: Expected : 7f  actual : 7f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1025: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1055: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intmask: Expected : 1b  actual : 1b
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1055: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1085: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr2: Expected : 37  actual : 37
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1085: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1115: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miicommand: Expected : 1  actual : 1
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1115: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1145: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miimoder: Expected : 8d  actual : 8d
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1145: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_ERROR ../WB/wb_proc_seq_lib.sv(201) @ 1175: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] get/read: read error collconf: Expected : 3444a  actual : 3000a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1175: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1205: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miiaddress: Expected : 30c  actual : 30c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1205: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1235: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgt: Expected : 3c  actual : 3c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1235: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1265: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miirx_data: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1265: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1295: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1325: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1355: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1385: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1415: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1445: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1475: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1505: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1535: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1565: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1595: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1625: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1655: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1685: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1715: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1745: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1775: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1805: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1835: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1865: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1895: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1925: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txbdnum: Expected : 7f  actual : 7f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1925: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1955: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr0: Expected : 6b4da14f  actual : 6b4da14f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1955: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 1985: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miiaddress: Expected : 1619  actual : 1619
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 1985: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2015: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr2: Expected : 6a  actual : 6a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2015: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2045: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgt: Expected : 59  actual : 59
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2045: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2075: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed packetlen: Expected : cc3ce2a5  actual : cc3ce2a5
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2075: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2105: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intmask: Expected : 66  actual : 66
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2105: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2135: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash0: Expected : f0913946  actual : f0913946
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2135: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_ERROR ../WB/wb_proc_seq_lib.sv(201) @ 2165: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] get/read: read error collconf: Expected : 94262  actual : 90022
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2165: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2195: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miimoder: Expected : 116  actual : 116
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2195: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2225: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miistatus: Expected : 6  actual : 6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2225: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2255: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miitx_data: Expected : ac2a  actual : ac2a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2255: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2285: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash1: Expected : cc302f42  actual : cc302f42
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2285: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2315: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr1: Expected : 51  actual : 51
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2315: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2345: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txctrl: Expected : 1e54f  actual : 1e54f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2345: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2375: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miicommand: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2375: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2405: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed moder: Expected : 1363a  actual : 1363a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2405: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2435: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr1: Expected : ca3a  actual : ca3a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2435: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2465: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intsrc: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2465: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2495: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ctrlmoder: Expected : 3  actual : 3
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2495: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 2525: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miirx_data: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2525: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2555: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2585: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2615: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2645: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2675: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2705: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2735: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2765: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2795: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2825: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2855: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2885: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2915: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2945: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 2975: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3005: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3035: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3065: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3095: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3125: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3155: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3185: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash1: Expected : b2e6f035  actual : b2e6f035
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3185: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_ERROR ../WB/wb_proc_seq_lib.sv(201) @ 3215: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] get/read: read error collconf: Expected : e4f4b  actual : e000b
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3215: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3245: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ctrlmoder: Expected : 5  actual : 5
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3245: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3275: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intmask: Expected : 2c  actual : 2c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3275: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3305: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miicommand: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3305: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3335: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intsrc: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3335: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3365: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed packetlen: Expected : bba781af  actual : bba781af
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3365: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3395: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miitx_data: Expected : e570  actual : e570
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3395: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3425: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miistatus: Expected : 6  actual : 6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3425: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3455: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr2: Expected : 21  actual : 21
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3455: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3485: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txbdnum: Expected : 7f  actual : 7f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3485: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3515: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr1: Expected : b9d7  actual : b9d7
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3515: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3545: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miimoder: Expected : fa  actual : fa
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3545: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3575: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr1: Expected : 30  actual : 30
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3575: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3605: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miiaddress: Expected : d0b  actual : d0b
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3605: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3635: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miirx_data: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3635: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3665: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr0: Expected : be0ebc80  actual : be0ebc80
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3665: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3695: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgt: Expected : 14  actual : 14
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3695: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3725: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed moder: Expected : c4af  actual : c4af
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3725: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3755: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash0: Expected : 47882a4f  actual : 47882a4f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3755: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 3785: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txctrl: Expected : bcff  actual : bcff
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3785: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3815: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3845: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3875: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3905: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3935: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3965: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 3995: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4025: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4055: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4085: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4115: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4145: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4175: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4205: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4235: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4265: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4295: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4325: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4355: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4385: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4415: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4445: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgt: Expected : b  actual : b
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4445: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4475: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr0: Expected : 2457ec4a  actual : 2457ec4a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4475: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4505: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed moder: Expected : 1ddb0  actual : 1ddb0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4505: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4535: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr1: Expected : 1c  actual : 1c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4535: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4565: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miistatus: Expected : 6  actual : 6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4565: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_ERROR ../WB/wb_proc_seq_lib.sv(201) @ 4595: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] get/read: read error collconf: Expected : 2a54a  actual : 2000a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4595: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4625: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miimoder: Expected : d8  actual : d8
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4625: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4655: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash0: Expected : a017ab04  actual : a017ab04
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4655: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4685: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed packetlen: Expected : 72b3ecdb  actual : 72b3ecdb
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4685: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4715: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intmask: Expected : 49  actual : 49
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4715: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4745: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr2: Expected : 49  actual : 49
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4745: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4775: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miirx_data: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4775: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4805: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash1: Expected : 47b57e44  actual : 47b57e44
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4805: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4835: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intsrc: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4835: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4865: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ctrlmoder: Expected : 4  actual : 4
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4865: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4895: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txctrl: Expected : 99fb  actual : 99fb
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4895: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4925: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr1: Expected : a3d6  actual : a3d6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4925: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4955: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txbdnum: Expected : 7f  actual : 7f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4955: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 4985: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miitx_data: Expected : c248  actual : c248
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 4985: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5015: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miiaddress: Expected : 50d  actual : 50d
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5015: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5045: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miicommand: Expected : 1  actual : 1
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5045: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5075: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5105: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5135: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5165: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5195: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5225: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5255: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5285: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5315: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5345: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5375: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5405: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5435: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5465: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5495: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5525: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5555: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5585: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5615: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5645: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5675: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5705: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intsrc: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5705: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5735: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed moder: Expected : 14661  actual : 14661
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5735: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5765: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ctrlmoder: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5765: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5795: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miistatus: Expected : 6  actual : 6
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5795: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5825: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txbdnum: Expected : 7f  actual : 7f
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5825: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5855: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miimoder: Expected : 17c  actual : 17c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5855: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5885: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr0: Expected : e829517c  actual : e829517c
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5885: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5915: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash1: Expected : ef6467fe  actual : ef6467fe
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5915: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5945: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr1: Expected : 34  actual : 34
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5945: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 5975: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miicommand: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 5975: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6005: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miitx_data: Expected : b408  actual : b408
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6005: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6035: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed macaddr1: Expected : a48a  actual : a48a
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6035: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6065: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed txctrl: Expected : 1b68b  actual : 1b68b
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6065: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6095: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed packetlen: Expected : 69f7f8aa  actual : 69f7f8aa
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6095: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6125: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed hash0: Expected : 7f72d998  actual : 7f72d998
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6125: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6155: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miiaddress: Expected : 180e  actual : 180e
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6155: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# In sample coverage enable bit is 0
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6185: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed intmask: Expected : 1e  actual : 1e
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6185: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6215: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgr2: Expected : 25  actual : 25
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6215: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_ERROR ../WB/wb_proc_seq_lib.sv(201) @ 6245: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] get/read: read error collconf: Expected : 884a6  actual : 80026
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6245: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6275: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed miirx_data: Expected : 0  actual : 0
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6275: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO ../WB/wb_proc_seq_lib.sv(205) @ 6305: uvm_test_top.env.proc_agent_i.sqr@@write_read_seq [REG_TEST_SEQ:] Register comparison is passed ipgt: Expected : 5d  actual : 5d
+# UVM_INFO ../SBD/mac_sbd.sv(35) @ 6305: uvm_test_top.env.sbd [SBD] printing Proc wb_tx
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 6405: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../TOP/test_lib.sv(20) @ 6405: uvm_test_top [STATUS] Test is Passing
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  314
+# UVM_WARNING :    0
+# UVM_ERROR :    5
+# UVM_FATAL :    0
+# ** Report counts by id
+# [REG_TEST_SEQ:]   105
+# [RNTST]     1
+# [SBD]   210
+# [STATUS]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim64_10.6c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 6405 ns  Iteration: 53  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.6c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+add wave -position insertpoint sim:/top/proc_pif/*
+add wave -position insertpoint sim:/top/mem_pif/*
+add wave -position insertpoint sim:/top/phy_pif/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/admin/Desktop/VLSI_GURU/VLSI_GURU/UVM/PROJECT/Ethernet_MAC/100_Mbps/EMAC_VER_12_TC/VERIFICATION/SIM/wave.do
+do run1.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 11:49:59 on Sep 26,2023
+# vlog -reportprogress 300 "+incdir+../../RTL" ../TOP/top_tb.sv "+incdir+../TOP" "+incdir+../PHY" "+incdir+../MII" "+incdir+../WB" "+incdir+../MEM" "+incdir+../SBD" 
+# -- Compiling module eth_clockgen
+# -- Compiling module eth_cop
+# -- Compiling module eth_crc
+# -- Compiling module eth_fifo
+# -- Compiling module eth_maccontrol
+# -- Compiling module eth_macstatus
+# -- Compiling module eth_miim
+# -- Compiling module eth_outputcontrol
+# -- Compiling module eth_random
+# -- Compiling module eth_receivecontrol
+# -- Compiling module eth_register
+# -- Compiling module eth_registers
+# -- Compiling module eth_rxaddrcheck
+# -- Compiling module eth_rxcounters
+# -- Compiling module eth_rxethmac
+# -- Compiling module eth_rxstatem
+# -- Compiling module eth_shiftreg
+# -- Compiling module eth_spram_256x32
+# -- Compiling module eth_transmitcontrol
+# -- Compiling module eth_txcounters
+# -- Compiling module eth_txethmac
+# -- Compiling module eth_txstatem
+# -- Compiling module eth_wishbone
+# -- Compiling module ethmac
+# ** Note: (vlog-2286) mac.svh(32): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: ../SBD/mac_reg_model.sv(51): (vlog-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: ../SBD/mac_reg_model.sv(194): (vlog-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(335): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(345): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../TOP/test_lib.sv(374): (vlog-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: ../WB/wb_proc_seq_lib.sv(190): (vlog-2240) Treating stand-alone use of function 'predict' as an implicit VOID cast.
+# -- Compiling interface wb_proc_intf
+# -- Compiling interface wb_mem_intf
+# -- Compiling interface phy_intf
+# -- Compiling interface miim_intf
+# -- Compiling module top
+# 
+# Top level modules:
+# 	eth_cop
+# 	top
+# End time: 11:50:01 on Sep 26,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 6
+# mac_reg_write_read_reg_model_test
+# mac_reg_write_read_reg_model_test_20230926_115001.log
